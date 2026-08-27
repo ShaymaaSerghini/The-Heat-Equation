@@ -145,6 +145,16 @@ For this smooth temperature profile, the **pseudospectral method achieved substa
 - Maximum Absolute Error for N=26: 0.05937
 - Absolute error below 0.1 achieved with N=26
 
+<img width="853" height="545" alt="0e5fca00-795d-4c4b-a65c-bdc03d04105e" src="https://github.com/user-attachments/assets/8e3aeaa2-130f-4e78-8a34-76aff8e32b67" />
+
+<img width="853" height="545" alt="640fb14d-896f-402f-bc30-bb971132112b" src="https://github.com/user-attachments/assets/a70e01f0-bfe2-4fd6-b859-de83b8e88340" />
+
+<img width="846" height="545" alt="814e5d39-47dc-4b67-b5c8-7d01cfffbca1" src="https://github.com/user-attachments/assets/828f2985-1dcc-48f5-8d36-08a37fedfdcd" />
+
+<img width="842" height="545" alt="6cd98527-e87d-4621-bdf9-ad8e36a8ecbe" src="https://github.com/user-attachments/assets/017ba88c-556e-4b5f-83fa-a74086a6fcb0" />
+
+- Max Absolute Error (1st Derivative): 1.16965
+- Max Absolute Error (2nd Derivative): 50.23949
 ### 5. Solving the Heat Equation
 
 I solved the time-dependent nonlinear heat equation using two independent approaches:
