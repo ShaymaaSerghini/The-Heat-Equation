@@ -61,7 +61,6 @@ I therefore switched to **Gauss-Lobatto nodes**.
 
 #### Result
 
-<img width="602" height="247" alt="image" src="https://github.com/user-attachments/assets/2cb55e0b-380d-43fd-acc1-b8b4da712ba6" />
 
 ```text
 6 nodes  → max error = 0.29829
