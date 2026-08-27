@@ -30,7 +30,12 @@ I built Python implementations of the main numerical methods, compared them with
 
 I created a `Surroundings` class to model the spatial and time-dependent external temperature acting on the bar.
 
+<img width="600" height="323" alt="image" src="https://github.com/user-attachments/assets/21f9ee2c-abc8-4589-a3a0-c35322a18c38" />
+
+<img width="600" height="323" alt="image" src="https://github.com/user-attachments/assets/62e0581f-e0f9-49cc-9e0f-a76e8fc6d32c" />
+
 The implementation reproduced all four supplied test values exactly, validating the model before using it in later calculations.
+<img width="602" height="375" alt="image" src="https://github.com/user-attachments/assets/1d18d01a-6c77-4546-b462-81acc027d493" />
 
 
 ### 2. Interpolation
@@ -43,6 +48,8 @@ I therefore switched to **Gauss-Lobatto nodes**.
 
 #### Result
 
+<img width="602" height="247" alt="image" src="https://github.com/user-attachments/assets/2cb55e0b-380d-43fd-acc1-b8b4da712ba6" />
+
 ```text
 6 nodes  → max error = 0.29829
 9 nodes  → max error = 0.04198
@@ -50,6 +57,8 @@ I therefore switched to **Gauss-Lobatto nodes**.
 ```
 
 **13 Gauss-Lobatto points were sufficient to reduce the maximum error below 0.01.**
+
+<img width="604" height="377" alt="image" src="https://github.com/user-attachments/assets/078b9cc8-9916-4e8d-a65a-66fe5479ca44" />
 
 
 ### 3. Numerical Integration
