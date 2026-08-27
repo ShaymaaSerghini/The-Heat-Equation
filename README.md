@@ -1,3 +1,4 @@
+<img width="863" height="550" alt="d3fe3c79-5b07-40bc-84f4-06a77ce0da36" src="https://github.com/user-attachments/assets/8eb332c2-f9f9-45ea-b397-170111dd5b26" />
 ## Nonlinear Heat Equation — Numerical Methods in Python
 
 ### Overview
@@ -105,7 +106,12 @@ A resolution study also showed the expected second-order convergence, with the t
 
 as the grid was refined.
 
+<img width="863" height="550" alt="d3fe3c79-5b07-40bc-84f4-06a77ce0da36" src="https://github.com/user-attachments/assets/38559836-dd78-4eb9-862d-86a80b14a29e" />
 
+<img width="855" height="545" alt="87488aa8-634a-45a9-980f-4c1e33fabba2" src="https://github.com/user-attachments/assets/0b054065-3854-487b-aa2c-e73bfcafce84" />
+
+
+<img width="855" height="545" alt="faff68ba-832e-44fb-be45-5f2329dcb62d" src="https://github.com/user-attachments/assets/11903bdd-ef1a-40b9-81f5-64ff23d643b5" />
 
 ### 4. Numerical Differentiation
 
@@ -127,7 +133,18 @@ Increasing the pseudospectral resolution reduced the error below `0.1` at approx
 
 For this smooth temperature profile, the **pseudospectral method achieved substantially higher accuracy with fewer grid points**.
 
+<img width="853" height="545" alt="b7f0695f-8c34-4f1c-b321-640039ea4b5a" src="https://github.com/user-attachments/assets/4e484eae-4009-4b16-97c4-85cf786336e5" />
 
+<img width="846" height="545" alt="227bed80-877a-4b19-a9c0-16cb1b12a453" src="https://github.com/user-attachments/assets/3243a842-5a23-4c07-a492-fe803a69a884" />
+
+Maximum Absolute Error for N=18: 1.16965
+
+<img width="853" height="545" alt="d1ad3703-2e85-45e8-8c0a-8ad640337798" src="https://github.com/user-attachments/assets/bd1c486c-99bc-498b-a2c0-a0051e004625" />
+
+<img width="855" height="545" alt="31c361b7-76f5-43c3-aa78-08b2b3aafe63" src="https://github.com/user-attachments/assets/3bc8c480-697d-49e4-aea8-0c6337c8e955" />
+
+Maximum Absolute Error for N=26: 0.05937
+Absolute error below 0.1 achieved with N=26
 
 ### 5. Solving the Heat Equation
 
