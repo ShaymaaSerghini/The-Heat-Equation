@@ -136,14 +136,14 @@ For this smooth temperature profile, the **pseudospectral method achieved substa
 
 <img width="846" height="545" alt="227bed80-877a-4b19-a9c0-16cb1b12a453" src="https://github.com/user-attachments/assets/3243a842-5a23-4c07-a492-fe803a69a884" />
 
-Maximum Absolute Error for N=18: 1.16965
+- Maximum Absolute Error for N=18: 1.16965
 
 <img width="853" height="545" alt="d1ad3703-2e85-45e8-8c0a-8ad640337798" src="https://github.com/user-attachments/assets/bd1c486c-99bc-498b-a2c0-a0051e004625" />
 
 <img width="855" height="545" alt="31c361b7-76f5-43c3-aa78-08b2b3aafe63" src="https://github.com/user-attachments/assets/3bc8c480-697d-49e4-aea8-0c6337c8e955" />
 
-Maximum Absolute Error for N=26: 0.05937
-Absolute error below 0.1 achieved with N=26
+- Maximum Absolute Error for N=26: 0.05937
+- Absolute error below 0.1 achieved with N=26
 
 ### 5. Solving the Heat Equation
 
@@ -153,6 +153,8 @@ I solved the time-dependent nonlinear heat equation using two independent approa
 
 The spatial derivatives were discretised using finite differences and the resulting system evolved using explicit RK2.
 
+<img width="846" height="545" alt="3bf31783-3bee-4d33-95de-6e7d4d4e9aa7" src="https://github.com/user-attachments/assets/8552abd9-19e7-49c4-9943-e979b0f84da2" />
+
 The simulation showed the initial central temperature peak gradually smoothing as heat diffused through the bar.
 
 The timestep was constrained by the **CFL stability condition**.
@@ -160,6 +162,8 @@ The timestep was constrained by the **CFL stability condition**.
 #### Pseudospectral + RK45
 
 I then replaced finite differences with pseudospectral derivative matrices and used SciPy's adaptive `solve_ivp` RK45 solver.
+
+<img width="620" height="453" alt="9f22e2d7-d6e4-4015-bc5b-c24f8620f307" src="https://github.com/user-attachments/assets/3a1d8096-6e08-4948-80c4-fc1b12da930b" />
 
 This provided higher spatial accuracy for smooth solutions while adaptive time stepping removed the need to manually select every timestep.
 
@@ -181,7 +185,11 @@ T(-L/2) = T(L/2) = 20
 τ = 2 → 1938 iterations
 τ = 2.5 → failed to converge
 ```
+<img width="842" height="545" alt="b0ed37f1-b3ac-4a08-acba-3906fce1db53" src="https://github.com/user-attachments/assets/c1075b1a-e6ed-4d32-a468-0aee3da07352" />
+-Converged in 3708 iterations.
 
+<img width="842" height="545" alt="2f36a33b-a211-4ebb-aa96-7bddd2ceae31" src="https://github.com/user-attachments/assets/dd0ce089-6347-4fca-92c8-84fff2724dba" />
+- Converged in 1938 iterations.
 Increasing the relaxation parameter therefore almost halved the iterations, but making it too large caused instability.
 
 
