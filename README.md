@@ -70,6 +70,8 @@ I therefore switched to **Gauss-Lobatto nodes**.
 
 <img width="855" height="545" alt="3ecb2836-4c33-46fc-adb4-165b2030afc9" src="https://github.com/user-attachments/assets/9d95548b-bb5b-48b2-aa28-54ff909fd042" />
 
+<img width="855" height="545" alt="8c840b81-666d-44eb-b8cf-5dccfbc91931" src="https://github.com/user-attachments/assets/07a7974f-f2a8-46db-badd-25829d2efe67" />
+
 <img width="855" height="545" alt="9c80b87c-a5f4-4b24-ba56-f921832bc90b" src="https://github.com/user-attachments/assets/d8726896-d3a3-4599-8413-953eb8cc2d4a" />
 
 <img width="855" height="545" alt="23d0a58c-7687-4746-a696-cd13c8c755cf" src="https://github.com/user-attachments/assets/64d2b2a8-aeed-472f-8374-62dcfeabf43f" />
