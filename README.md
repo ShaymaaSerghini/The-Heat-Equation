@@ -35,10 +35,12 @@ I created a `Surroundings` class to model the spatial and time-dependent externa
 
 <img width="864" height="468" alt="c4a2c125-259a-4f31-b003-7b2c45094c52" src="https://github.com/user-attachments/assets/72f4f579-817e-41ef-89ff-7385b4e4bb61" />
 
-The implementation reproduced all four supplied test values exactly, validating the model before using it in later calculations.
 
 <img width="855" height="545" alt="b9a1ca1c-fe5e-4372-b693-0c4957842f7c" src="https://github.com/user-attachments/assets/952bc11a-1d93-47e8-b24e-ed0d082edb1f" />
 
+The implementation reproduced all four supplied test values exactly, validating the model before using it in later calculations.
+
+<img width="1092" height="453" alt="c067467c-68db-4f42-b183-baafb889185b" src="https://github.com/user-attachments/assets/c29c4d64-d57d-4725-b52c-8873da63b4b2" />
 
 ### 2. Interpolation
 
