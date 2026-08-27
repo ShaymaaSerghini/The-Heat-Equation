@@ -30,12 +30,14 @@ I built Python implementations of the main numerical methods, compared them with
 
 I created a `Surroundings` class to model the spatial and time-dependent external temperature acting on the bar.
 
-<img width="600" height="323" alt="image" src="https://github.com/user-attachments/assets/21f9ee2c-abc8-4589-a3a0-c35322a18c38" />
+<img width="864" height="468" alt="10115d2e-38c3-4e9b-a48e-4f30d31d9661" src="https://github.com/user-attachments/assets/81414e07-682e-40e8-9b05-cc3aa978b355" />
 
-<img width="600" height="323" alt="image" src="https://github.com/user-attachments/assets/62e0581f-e0f9-49cc-9e0f-a76e8fc6d32c" />
+
+<img width="864" height="468" alt="c4a2c125-259a-4f31-b003-7b2c45094c52" src="https://github.com/user-attachments/assets/72f4f579-817e-41ef-89ff-7385b4e4bb61" />
 
 The implementation reproduced all four supplied test values exactly, validating the model before using it in later calculations.
-<img width="602" height="375" alt="image" src="https://github.com/user-attachments/assets/1d18d01a-6c77-4546-b462-81acc027d493" />
+
+<img width="855" height="545" alt="b9a1ca1c-fe5e-4372-b693-0c4957842f7c" src="https://github.com/user-attachments/assets/952bc11a-1d93-47e8-b24e-ed0d082edb1f" />
 
 
 ### 2. Interpolation
@@ -43,6 +45,15 @@ The implementation reproduced all four supplied test values exactly, validating 
 I reconstructed the temperature profile using **Lagrange interpolation**, first deriving the polynomial with SymPy and then verifying it against SciPy.
 
 With equally spaced points, higher-order interpolation developed oscillations near the boundaries.
+
+<img width="855" height="545" alt="8c840b81-666d-44eb-b8cf-5dccfbc91931" src="https://github.com/user-attachments/assets/07a7974f-f2a8-46db-badd-25829d2efe67" />
+<img width="859" height="545" alt="e40aa341-bb25-49aa-80a0-6434a3f73698" src="https://github.com/user-attachments/assets/0d941445-8d26-4fc1-abe4-4956845a9aca" />
+
+
+<img width="576" height="453" alt="9927ab9a-0e60-41f2-b241-b1f4ba9a18a8" src="https://github.com/user-attachments/assets/a841f3c9-cebb-4e82-982f-ee5eb4933138" />
+
+![Uploading e40aa341-bb25-49aa-80a0-6434a3f73698.png…]()
+<img width="576" height="453" alt="9be70907-24eb-40fe-b16a-321a646dedd8" src="https://github.com/user-attachments/assets/a6a64505-aef2-421e-83d7-69df525843ac" />
 
 I therefore switched to **Gauss-Lobatto nodes**.
 
@@ -56,13 +67,18 @@ I therefore switched to **Gauss-Lobatto nodes**.
 13 nodes → max error = 0.00574
 ```
 
+<img width="855" height="545" alt="3ecb2836-4c33-46fc-adb4-165b2030afc9" src="https://github.com/user-attachments/assets/9d95548b-bb5b-48b2-aa28-54ff909fd042" />
+
+<img width="855" height="545" alt="9c80b87c-a5f4-4b24-ba56-f921832bc90b" src="https://github.com/user-attachments/assets/d8726896-d3a3-4599-8413-953eb8cc2d4a" />
+
+<img width="855" height="545" alt="23d0a58c-7687-4746-a696-cd13c8c755cf" src="https://github.com/user-attachments/assets/64d2b2a8-aeed-472f-8374-62dcfeabf43f" />
+
+<img width="855" height="545" alt="96402c1e-12f5-4241-acbb-4242d2e07f55" src="https://github.com/user-attachments/assets/0b43f3d4-15b5-40f3-ae2d-64bcceb011d9" />
+
 **13 Gauss-Lobatto points were sufficient to reduce the maximum error below 0.01.**
 
-<img width="604" height="377" alt="image" src="https://github.com/user-attachments/assets/078b9cc8-9916-4e8d-a65a-66fe5479ca44" />
+<img width="855" height="545" alt="054bb124-5367-4c59-a39b-e517f316b3f6" src="https://github.com/user-attachments/assets/a444be2e-64de-4689-97b8-4c14c1b21534" />
 
-<img width="855" height="545" alt="23d0a58c-7687-4746-a696-cd13c8c755cf" src="https://github.com/user-attachments/assets/f7c812f7-849d-4deb-9225-f9c98dc3ae38" />
-<img width="855" height="545" alt="9c80b87c-a5f4-4b24-ba56-f921832bc90b" src="https://github.com/user-attachments/assets/051bfb44-f18f-452c-80e1-e2ebbbb12d7e" />
-<img width="855" height="545" alt="25346139-4dd1-409b-b2ca-1a09e93e32b3" src="https://github.com/user-attachments/assets/5725dd03-cfeb-440a-bd1d-8dc4b8591a99" />
 
 
 ### 3. Numerical Integration
