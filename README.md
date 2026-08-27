@@ -139,20 +139,40 @@ Increasing the relaxation parameter therefore almost halved the iterations, but 
 
 ## What I Learned
 
-- Numerical results must be **validated through convergence and error testing**, not just visually inspected.
-- Node placement can matter as much as polynomial order in interpolation.
-- Higher-order and pseudospectral methods can achieve much greater accuracy with fewer points.
-- Numerical accuracy, stability and computational cost must be considered together.
-- Parameters such as timestep and relaxation rate can determine whether a numerical method converges or fails.
-- Comparing custom implementations with established scientific libraries is an effective way to validate numerical code.
+Through this coursework, I learned how to translate a nonlinear physical problem into a sequence of numerical methods that could be implemented, tested and compared in Python. Rather than using numerical libraries as black boxes, I implemented several methods myself, including Lagrange interpolation, the Trapezium Rule, finite-difference derivatives and Runge–Kutta methods, before comparing my results with established SciPy implementations.
 
+I also learned the importance of **validating numerical methods rather than relying only on the appearance of the final result**. Throughout the project, I used convergence studies, error measurements and comparisons with independent implementations to check whether my code was behaving as expected. This showed me that obtaining a plausible numerical answer is only part of the problem; I also need evidence that the answer is accurate and that the method converges correctly.
 
-## Future Applications
+The interpolation work showed me that **how a numerical problem is represented can be as important as the order of the method itself**. Increasing the number of equally spaced interpolation points did not automatically improve the solution because of oscillations near the boundaries. By switching to Gauss-Lobatto nodes, I was able to substantially reduce the interpolation error. This helped me understand why careful grid and node selection matters in numerical modelling.
 
-The techniques developed here can be applied to:
+I also developed a better understanding of the trade-off between **accuracy, stability and computational cost**. Comparing finite-difference and pseudospectral differentiation showed me that higher-accuracy methods can sometimes achieve better results with considerably fewer spatial points. At the same time, solving the heat equation demonstrated that numerical accuracy alone is not sufficient: timestep restrictions such as the CFL condition must also be respected for the simulation to remain stable.
 
-- Heat and diffusion modelling
-- Black-Scholes-type PDEs
-- Fluid and wave simulations
-- Quantitative modelling
-- Boundary-value problems
+The relaxation calculation gave me practical experience with **numerical convergence and parameter selection**. Increasing the relaxation parameter reduced the number of iterations required to reach the steady-state solution, but increasing it too far caused the method to become unstable. This showed me that numerical parameters often involve a balance between computational speed and robustness rather than simply choosing the largest or smallest possible value.
+
+I also learned how different numerical techniques can be combined to solve a larger problem. For example, I converted the spatial part of the heat equation into a system of ordinary differential equations using finite differences or pseudospectral differentiation and then solved the resulting time evolution using RK2 or adaptive RK45. This helped me understand how interpolation, differentiation, integration and ODE solvers fit together within a complete computational model.
+
+Throughout the coursework, I used **Git and GitHub** to manage the development of the project, keep track of changes to my implementations and organise the numerical experiments and results. This gave me further experience maintaining a structured scientific coding project rather than treating each calculation as an isolated script.
+
+Overall, this project showed me how mathematical theory, numerical analysis and scientific programming work together. I learned not only how to implement numerical methods, but also how to test their limitations, compare alternative approaches and decide whether a computational result can be trusted.
+
+## Applying What I Learned
+
+The techniques I developed in this project are transferable to a wide range of computational problems because many physical and quantitative models can ultimately be expressed as differential equations that must be solved numerically.
+
+In future projects, I would reuse the same workflow of **formulating the mathematical problem, selecting an appropriate numerical representation, implementing the method, testing convergence and stability, comparing alternative approaches and validating the final result**.
+
+The PDE-solving techniques could be extended to problems involving:
+
+* heat and diffusion processes;
+* fluid and wave simulations;
+* boundary-value problems;
+* reaction-diffusion systems;
+* Black-Scholes-type financial PDEs;
+* other quantitative models governed by differential equations.
+
+I would particularly reuse the convergence and error-analysis techniques from this project. Testing how numerical error changes as the spatial or temporal resolution is increased provides a systematic way of checking whether an implementation behaves according to the underlying numerical theory.
+
+I would also reuse the comparison between **custom numerical implementations and established scientific libraries**. Implementing a method myself gives me a deeper understanding of the algorithm, while comparing it with NumPy or SciPy provides an independent check that the implementation is correct.
+
+More generally, this coursework gave me a framework that I can apply to future computational physics and quantitative modelling projects: **understand the mathematics, choose the numerical method carefully, implement it transparently, test its convergence and stability, and only then interpret the numerical output.**
+
