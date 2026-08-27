@@ -60,6 +60,10 @@ I therefore switched to **Gauss-Lobatto nodes**.
 
 <img width="604" height="377" alt="image" src="https://github.com/user-attachments/assets/078b9cc8-9916-4e8d-a65a-66fe5479ca44" />
 
+<img width="855" height="545" alt="23d0a58c-7687-4746-a696-cd13c8c755cf" src="https://github.com/user-attachments/assets/f7c812f7-849d-4deb-9225-f9c98dc3ae38" />
+<img width="855" height="545" alt="9c80b87c-a5f4-4b24-ba56-f921832bc90b" src="https://github.com/user-attachments/assets/051bfb44-f18f-452c-80e1-e2ebbbb12d7e" />
+<img width="855" height="545" alt="25346139-4dd1-409b-b2ca-1a09e93e32b3" src="https://github.com/user-attachments/assets/5725dd03-cfeb-440a-bd1d-8dc4b8591a99" />
+
 
 ### 3. Numerical Integration
 
@@ -82,7 +86,7 @@ A resolution study also showed the expected second-order convergence, with the t
 
 as the grid was refined.
 
----
+
 
 ### 4. Numerical Differentiation
 
