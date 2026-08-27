@@ -1,4 +1,3 @@
-<img width="863" height="550" alt="d3fe3c79-5b07-40bc-84f4-06a77ce0da36" src="https://github.com/user-attachments/assets/8eb332c2-f9f9-45ea-b397-170111dd5b26" />
 ## Nonlinear Heat Equation — Numerical Methods in Python
 
 ### Overview
