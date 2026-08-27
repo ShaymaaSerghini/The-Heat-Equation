@@ -22,7 +22,7 @@ I built Python implementations of the main numerical methods, compared them with
 - Object-oriented programming
 - Scientific visualisation
 
-
+<img width="1220" height="840" alt="d6904c05-1be2-4170-8f2f-7676733b7ef9" src="https://github.com/user-attachments/assets/51061ac9-eacf-481a-9fc0-a02285d96654" />
 
 ## Results
 
@@ -186,10 +186,13 @@ T(-L/2) = T(L/2) = 20
 τ = 2.5 → failed to converge
 ```
 <img width="842" height="545" alt="b0ed37f1-b3ac-4a08-acba-3906fce1db53" src="https://github.com/user-attachments/assets/c1075b1a-e6ed-4d32-a468-0aee3da07352" />
--Converged in 3708 iterations.
+
+- Converged in 3708 iterations.
 
 <img width="842" height="545" alt="2f36a33b-a211-4ebb-aa96-7bddd2ceae31" src="https://github.com/user-attachments/assets/dd0ce089-6347-4fca-92c8-84fff2724dba" />
+
 - Converged in 1938 iterations.
+
 Increasing the relaxation parameter therefore almost halved the iterations, but making it too large caused instability.
 
 
