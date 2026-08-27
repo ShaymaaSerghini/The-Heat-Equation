@@ -48,7 +48,7 @@ I reconstructed the temperature profile using **Lagrange interpolation**, first 
 
 With equally spaced points, higher-order interpolation developed oscillations near the boundaries.
 
-<img width="855" height="545" alt="8c840b81-666d-44eb-b8cf-5dccfbc91931" src="https://github.com/user-attachments/assets/07a7974f-f2a8-46db-badd-25829d2efe67" />
+
 <img width="859" height="545" alt="e40aa341-bb25-49aa-80a0-6434a3f73698" src="https://github.com/user-attachments/assets/0d941445-8d26-4fc1-abe4-4956845a9aca" />
 
 
